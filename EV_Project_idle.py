@@ -13,7 +13,6 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from sklearn.metrics import precision_score, recall_score, f1_score
 
 
-# ---------------- UNIT 1 ----------------
 # Objective 1: load, inspect and EDA
 
 df = pd.read_csv("elc.csv")   
@@ -62,7 +61,7 @@ x = pd.get_dummies(df[['Model Year', 'Legislative District', 'Make']], columns=[
 print(x.head())
 
 
-# ---------------- UNIT 2 ----------------
+
 # electric range is 0 for a lot of cars (not researched),
 # so for regression only taking rows where range is known
 reg_df = df[df['Electric Range'] > 0]
@@ -129,8 +128,6 @@ plt.bar(["Simple", "Multiple"], rmse_scores)
 plt.title("RMSE")
 plt.show()
 
-
-# ---------------- UNIT 3 ----------------
 # Objective 5: decision tree and random forest (BEV / PHEV)
 
 y = df['Electric Vehicle Type']
