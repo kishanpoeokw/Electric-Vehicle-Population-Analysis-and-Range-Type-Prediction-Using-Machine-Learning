@@ -53,9 +53,3 @@ An end-to-end Data Science and Machine Learning project analyzing **300,142+ ele
 
 ---
 
-## 🚀 How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
