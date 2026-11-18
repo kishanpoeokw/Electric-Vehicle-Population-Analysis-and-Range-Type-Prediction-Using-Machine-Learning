@@ -16,7 +16,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 # ---------------- UNIT 1 ----------------
 # Objective 1: load, inspect and EDA
 
-df = pd.read_csv("elc.csv")   # csv should be in the same folder as this file
+df = pd.read_csv("elc.csv")   
 print(df.head())
 print(df.shape)
 df.info()
